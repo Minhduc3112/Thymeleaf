@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" th:fragment="dynamic(view)">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<header>
+
+</header>
+ <nav th:insert="~{/layout/menu.html::navbar}"></nav>
+<hr>
+    <main th:replace="${view}"></main>
+<hr>
+<footer>Minh duc</footer>
+</body>
+</html>
